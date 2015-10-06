@@ -1,15 +1,15 @@
 angular.module('myApp',[])
 
-    .controller("mainController" ["$scope" function($scope) {
+    .controller("mainController", ["$scope", function($scope) {
 
-$scope.imager=[]
-var picture = ["images/girls.gif", "images/ass.gif"]
+
+$scope.picture = ["images/girl.gif", "images/ass.gif"]
 
 $scope.pictures = function(event) {
-	var r = picture[Math.floor(Math.random()*picture.length)]
+	$scope.r = $scope.picture[Math.floor(Math.random()* $scope.picture.length )]
 		
-			$scope.imager.push({r:[picture]});
-		} 
-
-
-}
+			// $scope.imager.push($scope.r);
+			// console.log(r)
+	console.log("pictures works")
+		} ();
+}])
