@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp" >
+<head>
+	  <link rel="stylesheet" href="animate.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js" type="text/javascript"></script>
+
+		
+		</script>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" rel="stylesheet" type="text/css" />
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot" rel="stylesheet" type="text/css" />
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.svg" rel="stylesheet" type="text/css"/>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.ttf" rel="stylesheet" type="text/css"/>
+
+		<script src="main.js"type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+
+		<title>Snow Report</title>
+
+</head>
+<body ng-controller="mainController">
+
+	<div class="header">
+	<img class="spinner" style="opacity:.3; z-index:2;" src="images/loading.gif">
+	<img class="spinner"src="images/glow.gif">
+	<img class="spinner" style="
+    opacity: 0.4;
+    height: 98%;
+    left: 45%;" src="images/horse.gif">
+	</div>	
+			<div>
+
+			<!--  <img class= "filter" src="images/ass.gif"> -->
+			 <img class="filter" src="{{imager}}">
+		</div>
+		<p class="m"> M
+		</p>
+		<p class="design"> Design
+		</p>
+
+<div class="footer">
+</div>
+	<!-- 	<div> 
+			<img src="images/SnowGif.gif">
+		</div>
+		<div> 
+			 <img ng-hide="button1" type="button" ng-click="click($event)" class="inverted roundMenu menu" src="images/menu.png">
+		</div>
+	
+		 -->
